@@ -1,6 +1,7 @@
 # Project5
 
 	For this project we were asked to implement the Mesonet code that we’ve been working with for projects 1,2, and 3. This includes reading a file with station codes and determine their hamming distance. Specifically, we had the task of making a GUI that would show outputs related to previous projects.
+ <br />
 	The first thing that I did for the project was create a class that would handle all of the calculations such as the total hamming distance. The class was named hammingDist. The readFile method was also included in this this class. The code of the method in this class were very similar to past methods we had to write in past projects so I had no problems with this class.
 	The main class that I spend most of my time writing was the MesoFrame class. This class would be responsible for making the main JFrame as well as creating all the components and panels that will be placed inside of the JFrame. For the JFrame I decided to use a BorderLayout for the layout manager. This would allow me to set a panel to left side of the frame which would match the design of the sample program that was given to us. 
 	The main panel that I used that hold almost all of the components was the MesoPanel panel. This panel had a GridBagLayout. This allowed me to have more freedom of placing the componets that I made in the exact place that I wanted them to be. This was a little bit more complicated then using the other layout managers because I had to set the coordinates of all the components. 
