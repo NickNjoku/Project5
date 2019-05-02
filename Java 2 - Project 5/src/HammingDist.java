@@ -20,7 +20,11 @@ protected int distTwo;
 protected int distThree;
 protected int distFour;
 
-		
+	/**
+	 * 	
+	 * @param entry
+	 * @throws IOException
+	 */
 	public HammingDist(String entry) throws IOException
 	{
 		stationIDS = new ArrayList<String>();
@@ -34,7 +38,10 @@ protected int distFour;
 		
 	}
 	
-	
+	/**
+	 * reads Mesonet.txt file into an ArrayList
+	 * @throws IOException
+	 */
 	public void readFile() throws IOException
 	{
 		// Creates Scanner that will read Mesonnet.txt file
@@ -51,7 +58,10 @@ protected int distFour;
 		}
 		
 	}
-	
+	/**
+	 * calculates the hamming distance of the string entered in the param
+	 * @param entry
+	 */
 	public void totalHammingDist(String entry)
 	{
 		distZero = 0;
@@ -112,65 +122,83 @@ protected int distFour;
 		}
 		
 	}
-	/*
-	public void addStation(String entry) throws IOException
-	{
-		readFile();
-		stationIDS.add(entry);
-		
-	}
-	*/
-
+	
+	/**
+	 * 
+	 * @return distZero
+	 */
 	public int getDistZero() {
 		return distZero;
 	}
 
-
+	/**
+	 * 
+	 * @return distOne
+	 */
 	public int getDistOne() {
 		return distOne;
 	}
 
-
+	/**
+	 * 
+	 * @return distTwo
+	 */
 	public int getDistTwo() {
 		return distTwo;
 	}
 
-
+	/**
+	 * 
+	 * @return distThree
+	 */
 	public int getDistThree() {
 		return distThree;
 	}
 
-
+	/**
+	 * 
+	 * @return distFour
+	 */
 	public int getDistFour() {
 		return distFour;
 	}
 
-
-
+	/**
+	 * 
+	 * @return distZeroStations ArrayList
+	 */
 	public ArrayList<String> getDistZeroStations() {
 		return distZeroStations;
 	}
 
-
-
+	/**
+	 * 
+	 * @return distOneStations
+	 */
 	public ArrayList<String> getDistOneStations() {
 		return distOneStations;
 	}
 
-
-
+	/**
+	 * 
+	 * @return distTwoStations
+	 */
 	public ArrayList<String> getDistTwoStations() {
 		return distTwoStations;
 	}
 
-
-
+	/**
+	 * 
+	 * @return distThreeStations
+	 */
 	public ArrayList<String> getDistThreeStations() {
 		return distThreeStations;
 	}
 
-
-
+	/**
+	 * 
+	 * @return distFourStations
+	 */
 	public ArrayList<String> getDistFourStations() {
 		return distFourStations;
 	}
